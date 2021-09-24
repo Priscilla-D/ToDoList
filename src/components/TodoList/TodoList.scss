@@ -1,14 +1,16 @@
 .form-addTask {
-    padding: 1em 0;
+    padding: 0 25% 0 25%;
   
     .input-addTask {
       width: 100%;
+      font-family: 'Indie Flower', cursive;
       background: #69bcbe;
-      border: 1px solid #0f7eaa;
+      border-radius: 3px;
+      font-size: 1.25em;
+      border: 1.8px solid #0f7eaa;
       color: #fff;
       box-shadow: inset 0 0 25px rgba(0,0,0,.1);
-      padding: 1em;
-      font-size: 1.5em;
+      padding: 0.5em;
   
       &:focus {
         box-shadow: inset 0 0 25px rgba(0,0,0,.5);
@@ -16,12 +18,13 @@
     }
   }
 
-  h1 {
+  .title {
       font-weight: bold;
       color: rgb(65, 63, 63);
       font-size: 2em;
       margin-top: 1em;
       margin-bottom: 2em;
+      text-decoration: underline wavy #54ac9d
   }
 
   .tasks {
@@ -41,8 +44,8 @@
   .btn {
     text-decoration: none;
     padding: 10px;
-    margin-top: 1em;
-    font-family: arial;
+    margin-top: 2em;
+    margin-bottom: 2em;
     font-size: 1em;
     color: #FFFFFF;
     background-color: #205867;
@@ -68,7 +71,6 @@
       text-decoration: none;
       padding: 6px;
       margin-left: 3em;
-      font-family: arial;
       font-size: 0.8em;
       border-radius: 10px;
       color: #FFFFFF;

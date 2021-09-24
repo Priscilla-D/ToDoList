@@ -15,14 +15,15 @@ class TodoList extends React.Component {
   }
 
   onChange(event) {
+    event.preventDefault();
     this.setState({
       inputField: event.target.value,
     });
   }
 
   addTodo(event) {
+    event.preventDefault();
     if (this.state.inputField !== '') {
-      event.preventDefault();
       this.setState({
         inputField: '',
         todos: [...this.state.todos, this.state.inputField],
@@ -58,7 +59,7 @@ class TodoList extends React.Component {
   render() {
     return (
       <div className="tasks">
-        <h1>- To do list -</h1>
+        <h1 className="title">- To do list -</h1>
         <form className="form-addTask">
           <input
             className="input-addTask"
